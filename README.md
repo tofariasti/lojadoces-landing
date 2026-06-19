@@ -6,16 +6,7 @@ Landing page moderna e responsiva para loja de doces artesanais, desenvolvida co
 
 🔗 **[Ver site ao vivo](https://tofariasti.github.io/lojadoces-landing/)**
 
-### Screenshots
-
-#### Desktop
-![Desktop View](screenshots/desktop.png)
-
-#### Tablet
-![Tablet View](screenshots/tablet.png)
-
-#### Mobile
-![Mobile View](screenshots/mobile.png)
+> 📸 Screenshots serão adicionados em breve. Acesse o link acima para ver o site em funcionamento!
 
 ## ✨ Características
 
