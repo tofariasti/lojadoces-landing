@@ -1,0 +1,364 @@
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeLeft {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeRight {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+.animate-fade-up:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.animate-fade-up:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.animate-fade-up:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.animate-fade-up:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.animate-fade-up:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+.animate-fade-left {
+  animation: fadeLeft 0.8s ease-out 0.3s forwards;
+  opacity: 0;
+}
+
+.animate-fade-right {
+  animation: fadeRight 0.8s ease-out 0.3s forwards;
+  opacity: 0;
+}
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animate-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hero__content > * {
+  animation-fill-mode: forwards;
+}
+
+.product-card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.product-card:hover {
+  animation: none;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.loading-shimmer {
+  animation: shimmer 2s infinite linear;
+  background: linear-gradient(
+    to right,
+    #f0f0f0 0%,
+    #e0e0e0 20%,
+    #f0f0f0 40%,
+    #f0f0f0 100%
+  );
+  background-size: 1000px 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+.hero__image-wrapper {
+  animation: fadeLeft 1s ease-out 0.5s forwards;
+  opacity: 0;
+}
+
+.testimonial-card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.testimonial-card:nth-child(1) {
+  transition-delay: 0.1s;
+}
+
+.testimonial-card:nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+.testimonial-card:nth-child(3) {
+  transition-delay: 0.3s;
+}
+
+.feature {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.feature:nth-child(1) {
+  transition-delay: 0.1s;
+}
+
+.feature:nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+.feature:nth-child(3) {
+  transition-delay: 0.3s;
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.nav__menu.show {
+  animation: slideInFromRight 0.3s ease-out;
+}
+
+.whatsapp-float {
+  animation: pulse 2s ease-in-out infinite, fadeIn 0.5s ease-out;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.hero__image-decoration--1 {
+  animation: float 6s ease-in-out infinite, rotate 20s linear infinite;
+}
+
+.hero__image-decoration--2 {
+  animation: float 8s ease-in-out infinite, rotate 25s linear infinite reverse;
+}
+
+.stat {
+  animation: fadeUp 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+.stat:nth-child(1) {
+  animation-delay: 0.6s;
+}
+
+.stat:nth-child(2) {
+  animation-delay: 0.7s;
+}
+
+.stat:nth-child(3) {
+  animation-delay: 0.8s;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.text-gradient {
+  background-size: 200% auto;
+  animation: gradientShift 3s ease infinite;
+}
+
+.btn--primary {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn--primary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.5s;
+}
+
+.btn--primary:hover::before {
+  left: 100%;
+}
+
+.product-card__image img {
+  will-change: transform;
+}
+
+.testimonial-card__stars span {
+  display: inline-block;
+  animation: zoomIn 0.5s ease-out forwards;
+  opacity: 0;
+}
+
+.testimonial-card__stars span:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.testimonial-card__stars span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.testimonial-card__stars span:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.testimonial-card__stars span:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.testimonial-card__stars span:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+.testimonial-card:hover .testimonial-card__stars span {
+  animation: none;
+  transform: scale(1.2);
+  transition: transform 0.2s ease;
+}
+
+.contact__card {
+  animation: fadeUp 0.6s ease-out forwards;
+  opacity: 0;
+}
+
+.contact__card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.contact__card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.contact__card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.contact__card:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.header {
+  animation: slideDown 0.5s ease-out;
+}
+
+.scroll-top {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.scroll-top.show {
+  animation: zoomIn 0.3s ease-out;
+}
+
+img {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
